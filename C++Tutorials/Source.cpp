@@ -19,7 +19,7 @@ struct Square : Shape
 
 	// override virtual function
 	// if not, Square becomes abstract class too!
-	double area() { return side_ * side_; }
+	double area() override { return side_ * side_; }
 };
 
 struct Triangle : Shape
@@ -30,7 +30,7 @@ struct Triangle : Shape
 		base_(base), height_(height)  {}
 
 	// override virtual function
-	double area() { return 0.5 * base_ * height_; }
+	double area() override { return 0.5 * base_ * height_; }
 };
 
 int main()
