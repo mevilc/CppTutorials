@@ -17,9 +17,9 @@ void f(Person p) { p.age = 3; }
 void g(Person& p) { p.age = 5; }
 void h(Person* p) { p->age = 5; }
 
-int i(Person& p) { return p.age; }
-int* j(Person& p) { return &p.age; }
-int& k(Person& p) { return p.age; }
+int i(Person p) { return p.age; }
+int* j(Person p) { return &p.age; }
+int& k(Person p) { return p.age; }
 
 int main()
 {
